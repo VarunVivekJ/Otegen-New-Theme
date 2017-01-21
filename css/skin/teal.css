@@ -11,16 +11,16 @@ a, a:hover, a:focus {
 	color: #385200;
 }
 .navbar-default, .navbar-default.navbar-fixed-top.navbar-shrink {
-  background-color: #72A603;
+  background-color: #00897B;
 }
 .navbar-default .navbar-nav > li > a {
-	color: #e6fcb7;
+	color: #00d6c0;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li.active > a, .navbar-default .navbar-nav>.active>a {
 	color: #fff !important;
 }
 .navbar-default.navbar-fixed-top.navbar-shrink .navbar-nav > li > a {
-	color: #e6fcb7;
+	color: #02efd7;
 }
 .navbar-default.navbar-shrink .navbar-nav > li > a:hover, .navbar-default.navbar-shrink .navbar-nav > li > a:focus, .navbar-default.navbar-shrink .navbar-nav > li.active > a {
 	color: #fff;
@@ -121,14 +121,14 @@ a, a:hover, a:focus {
 
 /* === Rotate Box === */
 .rotate-box-1.square-icon .rotate-box-icon, .rotate-box-2.square-icon .rotate-box-icon {
-	background-color: #72A603;
+	background-color: #00897B;
 }
 
 
 
 /* === Progress Bar === */
 .progress {
-	border: 3px solid #72A603;
+	border: 3px solid #00897B;
 	background-color: transparent;
 }
 .progress-bar {
@@ -145,7 +145,7 @@ a, a:hover, a:focus {
 
 /* === Portfolio === */
 .active_prot_menu a, .portfolio_menu ul li a:hover{
-	background: #72A603 !important;
+	background: #00897B !important;
 	color: #fff !important;
 }
 .portfolio_single_content div{
@@ -163,46 +163,46 @@ a, a:hover, a:focus {
 
 /* === Price === */
 .prices .panel-default .panel-heading {
-	box-shadow: inset 0px 4px 0px #72A603;
+	box-shadow: inset 0px 4px 0px #00897B;
 }
 .prices .price-box-featured .panel-heading {
-	background-color: #72A603;
+	background-color: #00897B;
 	color: #FFF;
 }
 .prices .price-box-featured .panel-footer {
-	box-shadow: inset 0px -4px 0px #72A603;
+	box-shadow: inset 0px -4px 0px #00897B;
 }
 .prices .price-box-featured .price-box-ribbon {
-	color: #72A603;
+	color: #00897B;
 }
 
 
 
 /* === Contact === */
 #contact-section {
-	background-color: #72A603;
+	background-color: #00897B;
 }
 #contact-section .contact .contact-form button {
-	background-color: #72A603;
+	background-color: #00897B;
 }
 #contact-section .contact .contact-form button:hover {
-	background-color: #9fc906;
+	background-color: #00897B;
 }
 
 
 
 /* === Footer === */
 .footer-top {
-	background-color: #72A603;
+	background-color: #00897B;
 }
 .footer {
 	background-color: #2d3035;
 }
 #subscribe > button[type="submit"] {
-    background: none repeat scroll 0 0 #9fc906;
+    background: none repeat scroll 0 0 #01c4b0;
 }
 #subscribe > button[type="submit"]:hover {
-    background: none repeat scroll 0 0 #385200;
+    background: none repeat scroll 0 0 #004e46;
 }
 .tweet-content span{
 	color:#385200;
@@ -212,7 +212,7 @@ a, a:hover, a:focus {
 
 /* === Buttons === */
 .btn-default, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active { 
-	background: #72A603;
+	background: #00897B;
 	color: #fff;
 }
 .btn-default:hover {
@@ -240,8 +240,8 @@ a, a:hover, a:focus {
 
 /* === To Top === */
 .scrolltotop {
-	color: #9fc906;
-	border: 2px solid #9fc906;
+	color: #01c4b0;
+	border: 2px solid #01c4b0;
 }
 
 
@@ -250,14 +250,14 @@ a, a:hover, a:focus {
 @media only screen and (max-width : 767px) {
 
 .navbar-collapse {
-		background-color: #9fc906;
+		background-color: #004e46;
 		border-color: #fff !important;
 	}
 .navbar-default.navbar-shrink .navbar-nav > li.active > a {
 	box-shadow: none !important;
 }
 .navbar-nav > li > a:hover, .navbar-nav > li > a:focus, .navbar-nav > li.active > a {
-	color: #385200;
+	color: #007064;
 }
 
 
