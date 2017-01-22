@@ -14,7 +14,7 @@ a, a:hover, a:focus {
   background-color: #00897B;
 }
 .navbar-default .navbar-nav > li > a {
-	color: #00d6c0;
+	color: #fff;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li.active > a, .navbar-default .navbar-nav>.active>a {
 	color: #fff !important;
