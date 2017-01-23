@@ -123,6 +123,20 @@ section {
   	background-size: cover;
 }
 
+#parallax1{
+        background:
+            linear-gradient(
+      rgba(0, 128, 128, 0.45), 
+      rgba(0, 128, 128, 0.45)
+    ),
+            url("../img/ayur.jpg") no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    font-family: Lato, sans-serif;
+    background-size: cover;    
+    padding-top: 750px;
+}
 #header {
 	/* height: 98px; */
 }

@@ -20,7 +20,7 @@ a, a:hover, a:focus {
 	color: #fff !important;
 }
 .navbar-default.navbar-fixed-top.navbar-shrink .navbar-nav > li > a {
-	color: #02efd7;
+	color: #fff;
 }
 .navbar-default.navbar-shrink .navbar-nav > li > a:hover, .navbar-default.navbar-shrink .navbar-nav > li > a:focus, .navbar-default.navbar-shrink .navbar-nav > li.active > a {
 	color: #fff;
