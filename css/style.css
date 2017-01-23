@@ -123,7 +123,7 @@ section {
   	background-size: cover;
 }
 
-#parallax1{
+.jumbotron{
         background:
             linear-gradient(
       rgba(0, 128, 128, 0.45), 
@@ -134,8 +134,9 @@ section {
     -moz-background-size: cover;
     -o-background-size: cover;
     font-family: Lato, sans-serif;
-    background-size: cover;    
-    padding-top: 750px;
+    background-size: 100% 100%;
+    padding-top: 350px; /*25%;*/
+    height: 100%;
 }
 #header {
 	/* height: 98px; */
