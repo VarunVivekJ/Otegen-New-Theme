@@ -142,6 +142,20 @@ section {
 	/* height: 98px; */
 }
 
+.heading{
+    color: #00897B;
+    font-size: 30px;
+    background-color: #EEE;
+/*    padding: 30px;*/
+}
+
+.addr{
+    color: #00897B;
+    font-size: 20px; 
+    text-align: center;
+}
+
+#google-maps iframe { pointer-events:none; }
 
 /* ===== Begin text colors ===== */
 .text-main { color: #363940; } /* Theme main color */
