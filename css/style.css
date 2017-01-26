@@ -182,6 +182,36 @@ section {
     
 }
 
+#locate{
+    font-size: 40px;
+    color: #fff;
+    font-weight: 500;
+    height: 70px;
+    padding: 15px;
+    background-color: #00897B;
+    vertical-align: middle;
+    position: relative;
+}
+
+#locate:after {
+	content: ' ';
+	height: 0;
+	position: absolute;
+	width: 0;
+    
+    border: 10px solid transparent;
+	border-top-color: #00897B;
+    
+    top: 100%;
+	left: 50%;
+	margin-left: -10px;
+    
+}
+
+#submit{
+    background-color: #00897B;
+}
+
 #google-maps iframe { pointer-events:none; }
 
 /* ===== Begin text colors ===== */
