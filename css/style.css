@@ -82,6 +82,8 @@ p {
 section {
 	position: relative;
 }
+
+/* =================================================================================================================================================== */
 .page-loader {
 	position: fixed;
 	left: 0px;
@@ -92,35 +94,6 @@ section {
 	background: #FFF url("https://static1.squarespace.com/static/54dcf1f3e4b03174c3dc75f5/t/5696221e05f8e204f27d6076/1452679715245/") center center no-repeat;
     
     /*../img/page-loader.gif*/
-}
-.divider {
-	width: 100%;
-	height: 23px;
-	background: url("http://www.clipartkid.com/images/560/line-divider-bethany-children-s-home-CNgAin-clipart.png") no-repeat center center;
-	margin: 5px 0 10px;
-}
-.thumbnail {
-	padding: 15px;
-	margin-bottom: 20px;
-	background-color: #FFF;
-	border: 1px solid #DDD;
-	-webkit-transition: all 0.2s ease-in-out;
-	-moz-transition: all 0.2s ease-in-out;
-	-o-transition: all 0.2s ease-in-out;
-	-ms-transition: all 0.2s ease-in-out;
-	transition: all 0.2s ease-in-out;
-}
-.form-control {
-	-webkit-box-shadow: none;
-	box-shadow: none;
-}
-.parallax {
-	position: relative;
-	background-position: 0 0;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	-webkit-background-size: cover;
-  	background-size: cover;
 }
 
 .jumbotron{
@@ -137,9 +110,6 @@ section {
     background-size: 100% 100%;
     padding-top: 350px; /*25%;*/
     height: 100%;
-}
-#header {
-	/* height: 98px; */
 }
 
 .heading{
@@ -260,9 +230,87 @@ section {
     margin:10px 15px 0px 20px;
 }
 
+.modal.fade .modal-dialog {
+    -webkit-transform: scale(0.1);
+    -moz-transform: scale(0.1);
+    -ms-transform: scale(0.1);
+    transform: scale(0.1);
+    top: 300px;
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
 
+.modal.fade.in .modal-dialog {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform: translate3d(0, -300px, 0);
+    transform: translate3d(0, -300px, 0);
+    opacity: 1;
+}
+
+.modal-dialog {
+    right: 10px;
+    left: 10px;
+    width: 600px;
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
+.modal-content {
+    color: #fff;
+}
+
+.modal-body img{
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width: @screen-xs-min) {
+  .modal { width: @modal-xs; }
+}
 
 #google-maps iframe { pointer-events:none; }
+/* =================================================================================================================================================== */
+
+
+.divider {
+	width: 100%;
+	height: 23px;
+	background: url("http://www.clipartkid.com/images/560/line-divider-bethany-children-s-home-CNgAin-clipart.png") no-repeat center center;
+	margin: 5px 0 10px;
+}
+.thumbnail {
+	padding: 15px;
+	margin-bottom: 20px;
+	background-color: #FFF;
+	border: 1px solid #DDD;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+.form-control {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.parallax {
+	position: relative;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+  	background-size: cover;
+}
+
+
+#header {
+	/* height: 98px; */
+}
 
 /* ===== Begin text colors ===== */
 .text-main { color: #363940; } /* Theme main color */
@@ -607,6 +655,123 @@ a.rotate-box-1:hover, a.rotate-box-2:hover {
 }
 /* End cta section */
 
+/* ===== Begin Portfolio===== */
+.portfolio_area{}
+.portfolio{}
+.portfoloi_top{}
+.portfoloi_content_area{}
+.portfolio_menu{
+	text-align: center;
+	overflow: hidden;
+	margin-top:22px;
+	margin-bottom:48px;
+}
+.portfolio_menu ul{
+	list-style: none outside none;
+    text-align: center;
+}
+.portfolio_menu ul li{
+    display: inline-block;
+}
+.portfolio_menu ul li a{
+	color: #363940;
+	background: transparent;
+    display: inline-block;
+    margin: 4px;
+    padding: 8px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.portfolio_content{}
+.portfolio_single_content{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 5;
+	margin-bottom:30px;
+	overflow:hidden;
+	
+}
+.portfolio_single_content:hover img{
+	 -o-transform: scale(2);
+	 -webkit-transform: scale(2);
+	 -moz-transform: scale(2);
+	 -ms-transform: scale(2);
+	 transform: scale(2);
+}
+.portfolio_single_content img{
+	width: 100%;
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 6;
+	cursor:pointer;
+	-moz-transition:all 1s;
+	-webkit-transition:all 1s;
+	-o-transition:all 1s;
+	-ms-transition:all 1s;
+	transition:all 1s;
+}
+.portfolio_single_content .canv{
+	width:100% !important;
+	height:100% !important;
+}
+.portfolio_single_content div+div{
+	background: none repeat scroll 0 0 rgba(255,255,255,.9);
+	bottom: -100%;
+	color: #FFC000;
+	font-weight: bold;
+	left: 0;
+	margin: 0;
+	min-height: 90px;
+	padding:31px 5px 0 10px;
+	position: absolute;
+	width: 100%;
+	z-index: 12;
+	border-top:0;
+}
+/*.portfolio_single_content:hover div+div{bottom: 0;}*/
+.portfolio_single_content div{
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:10;
+	width:100%;
+	height:100%;
+	text-align:center;
+	transform:scale(0);
+	transition:all .6s;
+	opacity:0;
+}
+.portfolio_single_content:hover div{
+	transform:scale(1);
+	opacity:1;
+}
+.portfolio_single_content div a{
+	color: #FFFFFF;
+	display: block;
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 40%;
+	padding-bottom: 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.portfolio_single_content div span{
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+}
+.portfolio_content{}
+.portfolio_content{
+    margin-top: 36px;
+    overflow: hidden;
+}
+/* ===== End Portfolio===== */
 
 
 /* ===== Begin Counter-Up ===== */
@@ -631,158 +796,10 @@ a.rotate-box-1:hover, a.rotate-box-2:hover {
 }
 /* ===== End Counter-Up ===== */
 
-
-/* ===== Begin team ===== */
-.team-item {
-	height: 120px;
-}	
-.team-item .team-triangle {
-	width: 120px;
-	height: 120px;
-	background: transparent;
-	-ms-transform: rotate(45deg);
-	-webkit-transform: rotate(45deg);
-	transform: rotate(45deg);
-	margin: 0 auto;
-	position: relative;
-	top: 25px;
-	box-shadow: 0 0 0 6px #FFFFFF, 0 0 0 7px #dadbdb;
-	overflow: hidden;
-}
-.team-item img {
-    max-width: 100%;
-}
-.team-items {
-	margin-bottom: 50px;
-	padding-top: 10px;
-	margin-top: 0;
-}
-.team-triangle .content {
-	-ms-transform: rotate(-45deg);
-	-webkit-transform: rotate(-45deg);
-	transform: rotate(-45deg);
-	top: -35px;
-	position: absolute;
-	left: -37px;
-	width: 190px;
-	height: 190px;
-}
-.team-hover {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba( 103, 109, 117, 0.9);
-	opacity: 0;
-	-webkit-transition: opacity 0.4s ease-in; /* For Safari 3.1 to 6.0 */
-    transition: opacity 0.4s ease-in;
-}
-.team-item .team-triangle:hover .team-hover {
-	opacity: 1;
-}
-.team-hover i {
-    color: rgba(255, 255, 255,.75);
-    font-size: 28px;
-    margin-top: 57px;
-    position: relative;
-}
-.team-hover p {
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: 400;
-    margin-top: 0;
-}
-.team-items .col-md-2:nth-child(7n+5) {
-	clear: left;
-	margin-left: 24.9999999%;
-}
-.team-items .col-md-2:nth-child(7n+1) {
-	clear: left;
-	margin-left: 16.6666666%;
-}
-/* ===== End team ===== */
-
-
-/* ===== Begin partners ===== */
-#partners-section {
-	padding: 80px 0;
-}
-.partners {
-	background-color: #252320;
-}
-
-.partners img {
-	max-width: 100%;
-	padding: 0 15px;
-}
-/* ===== End partners ===== */
-
-
 /* ===== Begin panels ===== */
 .panel, .panel-heading, .panel-footer  {
 }
 /* ===== End panels ===== */
-
-/* ===== Begin prices ===== */
-.prices .panel {
-	position: relative;
-	overflow: hidden;
-	border: none;
-}
-.prices .panel-body .lead {
-	margin: 0;
-	font-size: 48px;
-}
-.prices .panel-footer {
-	padding: 25px 15px;
-}
-
-/* panel-default */
-.prices .panel-default .panel-heading {
-	padding-top: 25px;
-	border: none;
-}
-.prices .panel-default .panel-body {
-	background-color: #EEE;
-}
-.prices .panel-default .list-group-item {
-	color: #222;
-	border: none;
-}
-.prices .panel-default .panel-footer {
-	background-color: #EEE;
-}
-
-/* price-box-featured */
-.price-box-featured {
-	z-index: 9;
-}
-.price-box-featured .panel {
-	box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.21);
-	-webkit-transform: scale(1.1);
-	-moz-transform: scale(1.1);
-	-ms-transform: scale(1.1);
-	-o-transform: scale(1.1);
-	transform: scale(1.1);
-}
-.prices .price-box-featured .price-box-ribbon {
-	position: absolute;
-	width: 150px;
-	top: 25px;
-	right: -35px;
-	text-align: center;
-	padding: 5px 20px;
-	background: #FFF;
-	color: #E83F33;
-	-webkit-transform: rotate(45deg);
-	-moz-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	-o-transform: rotate(45deg);
-	transform: rotate(45deg);
-}
-/* ===== End prices ===== */
-
 
 /* ===== Begin social ===== */
 #social-section {
