@@ -465,7 +465,8 @@ section {
 #text-carousel-intro-section .caption {
 /*	position: relative;*/
 	top: 50%;
-	margin-top: 40px;
+	/*margin-top: 40px;*/
+    padding: 1%;
 }
 #text-carousel-intro-section .caption h1 {
 	margin-top: 0;
@@ -1137,6 +1138,7 @@ p.subtitle {
 	-o-transform: rotate(45deg);
 	transform: rotate(45deg);
 }
+
 .scrolltotop .fa {
 	padding-left: 4px;
 	-webkit-transform: rotate(-45deg);
